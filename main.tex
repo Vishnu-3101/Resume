@@ -1,0 +1,181 @@
+%------------------------
+% Resume Template
+% Author : Gadige Vishnu Vardhan
+% Github : https://github.com/Vishnu-3101
+% License : MIT
+%------------------------
+
+\documentclass[a4paper,20pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.45in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemWithoutColon}[2]{
+  \item\small{ #2 \vspace{-2pt}}
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+    {\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-----------------------------
+%%%%%%  CV STARTS HERE  %%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Gadige Vishnu Vardhan}} & Email: \href{mailto: vishnugadige2003@gmail.com}{vishnugadige2003@gmail.com}\\
+  \href{https://linkedin.com/in/vishnu3101}{LinkedIn: Vishnu G} & Mobile:~~~+91-9703937185 \\
+  \href{https://github.com/Vishnu-3101}{Github: ~~github.com/Vishnu-3101} \\
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Vellore Institute of Technology}{Chennai, India}
+      {Bachelor of Technology - CSE with spl in AI and Robotics;  CGPA: 9.26}{Aug 2021 - Jun 2025}
+      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Courses:} Operating Systems, Data Structures, Analysis Of Algorithms, Artificial Intelligence, Machine Learning, Networking, Databases}}}
+    \resumeSubHeadingListEnd
+	    
+\vspace{-5pt}
+\section{Skills Summary}
+	\resumeSubHeadingListStart
+	\resumeSubItem{Languages}{~~~~~~Python, C++, SQL, Java}
+	\resumeSubItem{Frameworks}{~~~~Scikit-learn, HuggingFace, TensorFlow, Keras, PyTorch}
+	\resumeSubItem{Platforms}{~~~~~~~Arduino, Raspberry, ESP32, AWS, Google Cloud}
+	\resumeSubItem{DL models}{~~~~~~CNN, LLMs, Vision Transformers, LSTM}
+	\resumeSubItem{Soft Skills}{~~~~~~~Leadership, Self-motivation, Time Management}
+
+\resumeSubHeadingListEnd
+\vspace{-5pt}
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading{Research Intern - Vit Chennai}{\href{https://www.nature.com/articles/s41598-024-64072-x}{Research Paper}}
+    {Intern (Remote)}{Aug 2023 - Dec 2023}
+    \resumeItemListStart
+        \resumeItemWithoutColon{}
+          {Worked on automated grape leaf disease classification to propose a novel network outperforming existing DL models}
+        \resumeItemWithoutColon{}
+          {Proposed ”A dual track feature fusion model utilizing Group Shuffle Residual DeformNet and Swin Transformer for the classification of grape leaf diseases” achieving an accuracy of 98.6\%}
+        \resumeItemWithoutColon{}{Published the paper in Scientific Reports Journal with an impact factor of 3.8}
+      \resumeItemListEnd
+\vspace{-5pt}
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\vspace{-5pt}
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeSubItem{Bitcoin Price Prediction incorporating News and OLHCV data (NLP, Time-series, CommonCrawl, LLMs)}{(Work in progress) Research-oriented bitcoin price prediction for helping investors with price fluctuations. Tech: Python, GPT3.5 turbo model, Transformers Encoders, PyTorch, NLTK (Mar ’24)}
+\vspace{2pt}
+\resumeSubItem{Cyclone Intensity Detection (Deep Learning, Computer Vision)}{Deep Learning model to detect cyclone intensity in the Indian Ocean with an accuracy of 87.14\%. Tech: Python, ResNet, MobileNet, SMOTE, \& OpenCV. (Feb ’24 - Mar’24)}
+\vspace{2pt}
+\resumeSubItem{Precise direction control for autonomous navigation (Navigation, Magnetic Encoders, PID)}{Designed a C++ library for rover navigation utilizing encoder values and applying PID algorithm to move at specified speeds Tech: C++, Arduino, Ubuntu20.04, ROS (May ’24 - Jun ’24)}
+\vspace{2pt}
+\resumeSubItem{Short-range automated Parking assistance (Computer Vision, Machine Learning)}{Real-time contour detection in a video stream for dynamic obstacles localization with nearly 100\% accuracy. Tech: c++, OpenCV, CMake (Jan ’24 - Feb ’24)}
+\vspace{2pt}
+\resumeSubItem{Autonomous Delivery Drone (Computer Vision, Navigation)}{Engineered an autonomous delivery drone with 6 teammates employing computer vision for ARUCO marker detection to identify pick-up and drop zones. Additionally, trigonometric calculations are performed for precise package retrieval. Tech: OpenCV, Python, Raspberry, Ardupilot, Machine Planner, MavProxy, Pixhawk flight controller ( Nov ’22 - Feb ’23)}
+\resumeSubHeadingListEnd
+\vspace{-5pt}
+%-----------Awards-----------------
+\section{Achievements}
+\begin{description}[font=$\bullet$]
+\item {Finalists in Flipkart Grid 4.0 Robotics Challenge - Jan 2023}
+\vspace{-5pt}
+\item {Finalists in Anatolian Rover Challenge - May 2023}
+
+\end{description}
+%--------Volunteer Experience----------
+\vspace{-5pt}
+\section{Volunteer Experience}
+  \resumeSubHeadingListStart
+	\resumeSubheading
+    {Technical Lead at HumanoidX Club}{Chennai, India}
+    {Projects and Technical Events}{May 2023 - May 2024}
+    \resumeItemListStart
+        \resumeItemWithoutColon{}{Organized Synthetix’23 - the biggest interdisciplinary robotics hackathon in VIT Chennai pulling over 300 participants and generating a revenue of 30K}
+        \resumeItemWithoutColon{}{Led the project on a 2-wheel Self-balancing bot of size 60cm with an efficient budget plan}
+      \resumeItemListEnd
+\vspace{5pt}
+    % \vspace{10pt}\textbf{\large{Community Experience}}
+    \resumeSubheading
+    {Science Lead at Technocrats Robotics}{Chennai, India}
+    {Detecting Life on the Martian surface}{March 2023 - March 2024}
+    \resumeItemListStart
+        \resumeItemWithoutColon{}{Identified chemical tests to detect biomolecules and extinct life in soil for the URC rover challenge achieving a science score of 14.75 out of 15. Furthermore, I directed juniors to work on soil and atmospheric sensors to identify life feasibility.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+%-----------------Certifications-----------
+\section{Certifications}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+    {Google Cloud Digital Leader (Cloud Computing)}{\href{https://drive.google.com/file/d/1yrar0l8pqGjKomXAJhlzxpLaDC1J4h2B/view?usp=drive_link}{Certificate}}
+    {Global Certification}{Dec 2023 - Dec 2026}
+    \vspace{-2pt}
+    \resumeSubheading
+    {AWS Certified Cloud Practitioner (Cloud Computing)}{\href{https://drive.google.com/file/d/1fHfk6Y0M7gjuyt5abAbUEOhVx3xjZCgf/view?usp=drive_link}{Certificate}}
+    {Foundation Certification}{Dec 2023 - Dec 2026}
+\resumeSubHeadingListEnd
+\end{document}
